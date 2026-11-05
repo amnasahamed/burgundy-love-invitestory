@@ -9,9 +9,9 @@ import {
 } from "react";
 import hero from "@/assets/palace-hero.jpg";
 import foil from "@/assets/gold-foil.jpg";
-import chandelier from "@/assets/chandelier.png.asset.json";
-import couple from "@/assets/couple-red.png.asset.json";
-import floral from "@/assets/roses-corner.png.asset.json";
+import chandelierImg from "@/assets/chandelier.png";
+import coupleImg from "@/assets/couple-red.png";
+import floralImg from "@/assets/roses-corner.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -45,7 +45,7 @@ const CAL =
 function Floral({ className, flip = "" }: { className?: string; flip?: string }) {
   return (
     <img
-      src={floral.url}
+      src={floralImg}
       alt=""
       aria-hidden
       width={1024}
@@ -66,7 +66,7 @@ function Floral({ className, flip = "" }: { className?: string; flip?: string })
 function Chandelier({ className = "" }: { className?: string }) {
   return (
     <img
-      src={chandelier.url}
+      src={chandelierImg}
       alt=""
       aria-hidden
       width={1024}
@@ -668,7 +668,7 @@ function Invite() {
         </div>
         <div data-hero-couple data-parallax="-5" className="relative z-10 min-h-0 w-full flex-1">
           <img
-            src={couple.url}
+            src={coupleImg}
             alt="Aarav and Diya in wine and gold"
             width={1024}
             height={1408}
